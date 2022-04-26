@@ -11,6 +11,8 @@ export class TextInputComponent implements OnInit {
   @Input() type: string = 'number'
   @Input() label: string = 'label'
 
+  @Input() error: string = ''
+
 
   constructor() { }
 

@@ -3,7 +3,8 @@
   <main class="main-container">
     <section class="mr">
       <div class="app-container-input mb">
-        <app-text-input type="number" label="Length of password" [control]="passwordLength"></app-text-input>
+        <app-text-input type="number" label="Length of password" [control]="passwordLength"
+          error="Minimnum is 4 , Maximum is 30"></app-text-input>
         <div>
           <app-checkbox-input [control]="allowLetters" label="Letters"></app-checkbox-input>
           <app-checkbox-input [control]="allowNum" label="Numbers"></app-checkbox-input>
@@ -12,7 +13,7 @@
         </div>
       </div>
       <div class="text-center">
-        <app-button text="Generate Password" (onClick)="onGeneratePassword()"></app-button>
+        <app-button [disabled]="passwordLength.invalid" text="Generate Password" (onClick)="onGeneratePassword()"></app-button>
       </div>
       <app-password-viewer [password]="generatedPassword"></app-password-viewer>
       </section>

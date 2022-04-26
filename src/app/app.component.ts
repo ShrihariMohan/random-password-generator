@@ -35,24 +35,21 @@ export class AppComponent implements OnInit {
 
     let allChars = ''
 
-    let requiredVairations = 1
+    let requiredVairations = 0
 
     let randPasswordArray = new Array(passwordLength)
     if (allowLetters) {
-      randPasswordArray[requiredVairations - 1] = chars;
+      randPasswordArray[requiredVairations++] = chars;
       allChars += chars
-      requiredVairations++
     }
 
     if (allowNum) {
-      randPasswordArray[requiredVairations - 1] = numberChars;
+      randPasswordArray[requiredVairations++] = numberChars;
       allChars += numberChars
-      requiredVairations++
     }
     if (allowSpecialChars) {
-      randPasswordArray[requiredVairations - 1] = specialChars;
+      randPasswordArray[requiredVairations++] = specialChars;
       allChars += specialChars
-      requiredVairations++
     }
     randPasswordArray.fill(allChars, requiredVairations, passwordLength);
 

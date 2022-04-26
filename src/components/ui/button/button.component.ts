@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() text: string = 'Button'
+  @Input() disabled: boolean = false
   @Output() onClick = new EventEmitter<string>();
 
   constructor() { }
