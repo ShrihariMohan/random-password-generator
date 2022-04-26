@@ -1,0 +1,26 @@
+.app-container-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.root {
+  padding: 8px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main-container {
+    flex-direction: column;
+  }
+}

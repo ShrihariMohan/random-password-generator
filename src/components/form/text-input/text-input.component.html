@@ -1,0 +1,9 @@
+<div class="input-container">
+
+  <label [for]="label">
+    {{label}}
+  </label>
+  <input [type]="type" [name]="label" [formControl]="control" class="input-field">
+
+  <span class="error" *ngIf="control.invalid"> Minimum is 4 , Maximum is 30 </span>
+</div>

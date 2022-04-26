@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+.mb {
+  margin-bottom: 16px;
+}
+
+.mr {
+  margin-right: 16px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.error {
+  color: #B22727;
+  font-size: 12px;
+}
+
+.text-center {
+  text-align: center;
+}

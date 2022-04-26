@@ -1,0 +1,23 @@
+label {
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+}
+
+.input-container {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  padding: 8px;
+  margin: 4px;
+  border-radius: 8px;
+  border: 1px solid #006E7F;
+
+}
+
+.input-field:active {
+  border: 1px solid #F8CB2E;
+}
