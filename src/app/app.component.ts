@@ -85,6 +85,7 @@ export class AppComponent implements OnInit {
       this.isCheckBoxError = 'Select atleast one checkbox'
       return
     }
+
     this.generatedPassword = this.generatePassword(len, isLetter, isNum, isSpecial)
   }
 }

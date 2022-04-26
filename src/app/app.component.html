@@ -5,9 +5,9 @@
       <div class="app-container-input mb">
         <app-text-input type="number" label="Length of password" [control]="passwordLength"></app-text-input>
         <div>
-          <app-checkbox-input [control]="allowLetters" label="Include Letters"></app-checkbox-input>
-          <app-checkbox-input [control]="allowNum" label="Include Numbers"></app-checkbox-input>
-          <app-checkbox-input [control]="allowSpecialChars" label="Include Special"></app-checkbox-input>
+          <app-checkbox-input [control]="allowLetters" label="Letters"></app-checkbox-input>
+          <app-checkbox-input [control]="allowNum" label="Numbers"></app-checkbox-input>
+          <app-checkbox-input [control]="allowSpecialChars" label="Special"></app-checkbox-input>
           <p *ngIf="isCheckBoxError" class="error text-center"> {{isCheckBoxError}}</p>
         </div>
       </div>
