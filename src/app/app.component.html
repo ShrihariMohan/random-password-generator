@@ -1,7 +1,5 @@
 <div class="root">
   <app-header></app-header>
-  <main class="main-container">
-    <section class="mr">
       <div class="app-container-input mb">
         <app-text-input type="number" label="Length of password" [control]="passwordLength"
           error="Minimnum is 4 , Maximum is 30"></app-text-input>
@@ -16,7 +14,5 @@
         <app-button [disabled]="passwordLength.invalid" text="Generate Password" (onClick)="onGeneratePassword()"></app-button>
       </div>
       <app-password-viewer [password]="generatedPassword"></app-password-viewer>
-      </section>
-      </main>
       <router-outlet></router-outlet>
 </div>
