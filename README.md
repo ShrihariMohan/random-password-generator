@@ -1,6 +1,14 @@
 # RandomPasswordGenerator
+Here is a demo  [RP Generator](https://rp-generator.netlify.app/)
+This Project is open for new comers to angular and git to play with the PRs , Forks &  looking to contribute for your next resume.
+
+If you need any help contact me on twitter 
+- Twitter at <a href="https://twitter.com/papashrihari" target="_blank"> `@Shrihari Mohan`</a>
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
+
 
 ## Development server
 
